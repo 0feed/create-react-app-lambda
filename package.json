@@ -1,33 +1,20 @@
 {
-  "name": "create-react-app-lambda",
-  "version": "0.5.0",
+  "name": "discord-timestamp-generator",
   "private": true,
-  "dependencies": {
-    "axios": "^0.19.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "^3.0.1"
-  },
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "start:lambda": "netlify-lambda serve src/lambda",
-    "build": "run-p build:**",
-    "build:app": "react-scripts build",
-    "build:lambda": "netlify-lambda build src/lambda",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "devDependencies": {
-    "netlify-lambda": "^1.4.5",
-    "npm-run-all": "^4.1.5"
+    "@types/node": "^22.14.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
   }
 }
